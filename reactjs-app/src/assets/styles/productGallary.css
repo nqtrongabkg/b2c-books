@@ -1,0 +1,9 @@
+.selected-option {
+    background-color: blue; 
+  }
+.selected {
+    background-color: #007BFF; 
+    color: white;
+    font-weight: bold;
+}
+

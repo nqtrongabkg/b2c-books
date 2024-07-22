@@ -1,0 +1,33 @@
+.container {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f0c040;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f0c040;
+}

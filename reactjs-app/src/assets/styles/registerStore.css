@@ -1,0 +1,90 @@
+.register-store-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.policy-list {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.policy-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.policy-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.policy-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.policy-agreement {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.policy-agreement input[type="checkbox"] {
+    display: none;
+}
+
+.policy-agreement label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.policy-agreement label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.policy-agreement input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 2px;
+    width: 9px;
+    height: 18px;
+    border: solid #007bff;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.register-btn:not(:disabled):hover {
+    background-color: #218838;
+}

@@ -1,0 +1,62 @@
+/* Custom CSS for additional styling */
+.card {
+    border-radius: 10px;
+}
+
+.img-md {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.feedback-item {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.feedback-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    transition: opacity 0.3s;
+}
+
+.product-card:hover img {
+    opacity: 0.9;
+}
+
+.shop-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.shop-button:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}

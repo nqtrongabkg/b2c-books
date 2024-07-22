@@ -1,0 +1,56 @@
+.desktop-menu-category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-category {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+    width: max-content; /* Automatically adjust to fit the content */
+    min-width: 200px; /* Minimum width to ensure a good default size */
+}
+
+.menu-category:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    white-space: normal; /* Allow the text to wrap */
+    word-wrap: break-word; /* Break words if necessary */
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%; /* Ensure the anchor tag fills the list item */
+}
+
+.dropdown-item a:hover {
+    background: #f0f0f0;
+    color: #333;
+}
